@@ -7,7 +7,7 @@ const Mutation = {
         
 
         const body = args
-        console.log('body', body)
+   
     return fetch(`https://next.focuster.com/api/v1/addAction?api_key=${process.env.FOCUSTER_API}`, {
         method: 'post',
         body:    JSON.stringify(body),

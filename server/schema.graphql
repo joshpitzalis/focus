@@ -1,3 +1,5 @@
+scalar JSON
+
 type Orders {
   PMY5XbR7FZo5qEkEb: Int
 }
@@ -11,12 +13,12 @@ type Task {
   note: String
   duration: Int
   tags: [String]
-  completed: Boolean!
+  completed: String!
   fromCalendar: Boolean
   listId: String
   userId: String!
   splittable: Boolean
-  orders: Orders
+  orders: JSON
   createdLocal: String!
   createdLocalPretty: String!
   createdDatePretty: String!
